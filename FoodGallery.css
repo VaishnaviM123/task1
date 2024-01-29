@@ -1,0 +1,702 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(241, 234, 226);
+}
+@media(min-width:721px){
+    .d1{
+        padding-left: 15px;
+        padding-right: 20px;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: rgb(237, 223, 208);
+    }
+    .d11 img{
+        height: 90px;
+        width: 100px;
+    }
+    .d11:hover{
+        padding-left: 10px;
+        transform: scale(1.1);
+    }
+    .d12{
+        text-align: end;
+    }
+    .d11 h2{
+        display: inline;
+    }
+    .text-shadow1{
+        font-style: italic;
+        text-transform: uppercase;
+        color: rgb(230, 130, 243);
+        -webkit-text-stroke: rgb(79, 10, 75);
+        -webkit-text-stroke-width: 1px;
+        text-shadow: 2px 2px 10px rgb(44, 3, 68);
+        transition: all 0.5s ease-in-out;
+        text-align: center;
+        letter-spacing: 0.5em;
+        font-size: 3em;
+        animation: flicker1 0.5s ease-in-out infinite alternate;
+    }
+    .text-shadow1:hover {
+        color: rgb(81, 4, 60);
+        -webkit-text-stroke: rgb(229, 162, 224);
+    }
+    @keyframes flicker1 {
+        0% {
+        opacity: 0.5;
+        text-shadow: 2px 2px 10px rgb(69, 2, 215);
+        }
+        100% {
+        opacity: 1;
+        text-shadow: 2px 2px 20px rgb(124, 69, 207);
+        }
+    }
+    a{
+        padding-left: 35px;
+        font-size: 1.6em;
+        animation: flicker2 0.5s ease-in-out infinite alternate;
+        transition: all 0.5s ease-in-out;
+    }
+    @keyframes flicker2 {
+        0% {
+        opacity: 0.5;
+        text-shadow: 2px 2px 10px rgb(255, 255, 255);
+        }
+        100% {
+        opacity: 1;
+        text-shadow: 2px 2px 20px rgb(255, 255, 255);
+        }
+    }
+    a:hover{
+        font-size: 2em;
+        -webkit-animation-play-state: paused;
+    }
+    .d2{
+        background-image: url("./FoodGallery/res2.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .d221:hover{
+        transform: scale(1.3);
+    }
+    .d22{
+        text-align: center;
+    }
+    .b1{
+        color: rgb(232, 205, 229);
+        background-color: rgba(88, 24, 75, 0.873);
+        border-color: rgba(241, 149, 224, 0);
+        box-shadow: 0 6px 10px 0 rgba(198, 117, 157, 0.485), 0 10px 20px 0 rgba(203, 159, 181, 0.549);
+        font-size: larger;
+        font-weight: 800;
+        padding: 12px 15px;
+        text-align: center;
+        border-radius: 50%;
+    }
+    .b1:hover{
+        color: rgba(88, 24, 75, 0.873);
+        background-color: rgba(238, 187, 230, 0);
+        transform: scale(1.08);
+        box-shadow: 0 6px 10px 0 rgba(178, 77, 128, 0.555), 0 10px 20px 0 rgba(178, 77, 128, 0.549);
+    }
+
+    @keyframes lights {
+        0% {
+        color: hsl(305, 72%, 38%);
+        text-shadow:
+            0 0 1em hsla(320, 74%, 50%, 0.2),
+            0 0 0.125em hsla(320, 80%, 37%, 0.3);
+        }
+        
+        30% { 
+        color: hsl(305, 76%, 28%);
+        text-shadow:
+            0 0 1em hsla(320, 86%, 42%, 0.5),
+            0 0 0.125em hsla(320, 75%, 43%, 0.5);
+        }
+        
+        40% { 
+        color: hsl(305, 80%, 20%);
+        text-shadow:
+            0 0 1em hsla(320, 76%, 44%, 0.5),
+            0 0 0.125em hsla(320, 54%, 65%, 0.5);
+        }
+        
+        70% {
+        color: hsl(305, 84%, 14%);
+        text-shadow:
+            0 0 1em hsla(320, 88%, 39%, 0.5),
+            0 0 0.125em hsla(320, 68%, 35%, 0.5);
+        }
+        
+        100% {
+        color: hsl(305, 88%, 11%);
+        text-shadow:
+            0 0 1em hsla(320, 72%, 52%, 0.2),
+            0 0 0.125em hsla(320, 66%, 39%, 0.3);
+        } 
+    }
+    .text-shadow2{
+        font: 175% / 1.3 Raleway, sans-serif;
+        color: hsl(305, 85%, 11%);
+        font-weight: 650;
+        animation: lights 3s 750ms linear infinite;
+    }
+    .d3{
+        margin-top: 4%;
+        margin-left: 8%;
+        margin-right: 4%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .d31,.d32{
+        width: 40%;
+    }
+    .d31{
+        padding-left: 5%;
+        flex: 1;
+        width: 550px;
+    }
+    .d31 img{
+        box-shadow: 0 6px 10px 0 rgba(219, 175, 197, 0.466), 0 10px 20px 0 rgba(211, 145, 178, 0.466); 
+    }
+    .d31 img:hover{
+        transform: scale(1.1);
+        border-radius: 13px;
+        box-shadow: 0 6px 10px 0 rgba(230, 154, 192, 0.466), 0 10px 20px 0 rgba(186, 120, 153, 0.466);
+    }
+    .d32{
+        padding: 3%;
+        text-align: center;
+        color: rgb(38, 13, 81);
+        flex: 1;
+    }
+    .d32 p{
+        font-weight: 540;
+        font-size: large;
+    }
+    .d4 h2{
+        display: inline;
+        padding-left: 5%;
+        color: rgb(131, 9, 114);
+        font-size: 33px;
+    }
+    .d41, .d42, .d43, .d44{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .d411{
+        width: 240px;
+        padding: 1%;
+        border: 1px solid rgb(223, 200, 174);
+        background-color: rgb(240, 233, 235);
+        border-radius: 9px;
+        box-shadow: 0 4px 8px 0 rgb(220, 200, 174), 0 8px 14px 0 rgb(220, 200, 174);
+    }
+    .d411:hover{
+        transform: scale(1.02);
+        transition: transform 1.3s ease;
+        box-shadow: 0 4px 8px 0 rgb(224, 190, 175), 0 8px 14px 0 rgb(214, 190, 170);
+    }
+    .d411:hover img{
+        transform: scale(1.08);
+        transition: transform 1.5s ease;
+    }
+    .d411 h2{
+        padding-left: 40%;
+        padding-right: 40%;
+        color: rgba(120, 28, 74, 0.805);
+        font-size: 20px;
+    }
+    .b2{
+        margin-top: 65%;
+        background-color: rgb(237, 208, 197);
+        color: rgba(77, 4, 61, 0.873);
+        border-color: rgba(77, 4, 61, 0);
+        font-size: larger;
+        font-weight: 1000;
+        padding: 20px;
+        text-align: center;
+        border-radius: 50%;
+    }
+    .b2:hover{
+        background-color: rgba(0, 0, 0, 0);
+        transform: scale(1.05);
+        box-shadow: 0 6px 10px 0 rgba(215, 163, 189, 0.438), 0 10px 20px 0 rgba(218, 133, 176, 0.405);
+    }
+    .d5{
+        margin-top: 4%;
+        margin-bottom: 1%;
+        margin-left: 2%;
+        margin-right: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        line-height: 0.2;
+    }
+    .d51{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2%;
+        line-height: 1;
+    }
+    .d52{
+        margin: 0.2%;
+        width: 350px;
+        background-color: rgb(238, 221, 202);
+        padding: 1%;
+        display: flex;
+        flex-wrap: wrap;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .d521{
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 1%;
+    }
+    .d6{
+        margin-top: 6%;
+        margin-bottom: 0%;
+        margin-left: 4%;
+        margin-right: 6%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        line-height: 1;
+    }
+    .d61{
+        width: 40%;
+        padding: 3%;
+        text-align: center;
+    }
+    .d611{
+        margin: 0%;
+        margin-top: 2%;
+        padding-right: 5%;
+        padding-bottom: 6%;
+        padding-left: 2%;
+        padding-top: 2%;
+        width: 100%;
+        background-image: url("./FoodGallery/res7.jpg");
+        background-repeat: repeat;
+        background-size: cover;
+    }
+    .d62{
+        width: 45%;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .d621, .d622, .d623, .d624{
+        padding: 1%;
+    }
+    .d621 img:hover, .d624 img:hover, .d622 img:hover, .d623 img:hover{
+        transform: scale(1.04);
+        transition: transform 2s ease;
+        border-radius: 20px;
+        box-shadow: 0 6px 10px 0 rgba(206, 43, 125, 0.6), 0 10px 20px 0 rgba(199, 93, 146, 0.578);
+    }
+    .d7{
+        height: 290px;
+        margin: 4%;
+        margin-top: 5%;
+    }
+    marquee{
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .d7 img{
+        width: 200px;
+        height: 280px;
+        padding-left: 20px;
+    }
+    .d8{
+        width: 100%;
+        text-align: center;
+    }
+    .d9{
+        background-color: rgb(238, 221, 202);
+        padding-top: 10px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .d91, .d92, .d93, .d94, .d95{
+        margin-left: 4%;
+    }
+    .d92, .d93, .d94, .d95{
+        padding-top: 3%;
+        align-items: center;
+    }
+    .d10{
+        padding-left: 44%;
+    }
+}
+
+@media(max-width:720px){
+    .d1{
+        padding-left: 15px;
+        padding-right: 20px;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: rgb(237, 223, 208);
+    }
+    .d11 img{
+        height: 70px;
+        width: 70px;
+    }
+    .d11:hover{
+        padding-left: 10px;
+        transform: scale(1.1);
+    }
+    .d12{
+
+    }
+    .d11 h2{
+        display: inline;
+    }
+    .text-shadow1{
+        font-style: italic;
+        text-transform: uppercase;
+        color: rgb(230, 130, 243);
+        -webkit-text-stroke: rgb(79, 10, 75);
+        -webkit-text-stroke-width: 1px;
+        text-shadow: 2px 2px 10px rgb(44, 3, 68);
+        transition: all 0.5s ease-in-out;
+        text-align: center;
+        letter-spacing: 0.5em;
+        font-size: 3em;
+        animation: flicker1 0.5s ease-in-out infinite alternate;
+    }
+    .text-shadow1:hover {
+        color: rgb(81, 4, 60);
+        -webkit-text-stroke: rgb(229, 162, 224);
+    }
+    @keyframes flicker1 {
+        0% {
+        opacity: 0.5;
+        text-shadow: 2px 2px 10px rgb(69, 2, 215);
+        }
+        100% {
+        opacity: 1;
+        text-shadow: 2px 2px 20px rgb(124, 69, 207);
+        }
+    }
+    a{
+        padding-left: 35px;
+        font-size: 1.6em;
+        animation: flicker2 0.5s ease-in-out infinite alternate;
+        transition: all 0.5s ease-in-out;
+    }
+    @keyframes flicker2 {
+        0% {
+        opacity: 0.5;
+        text-shadow: 2px 2px 10px rgb(255, 255, 255);
+        }
+        100% {
+        opacity: 1;
+        text-shadow: 2px 2px 20px rgb(255, 255, 255);
+        }
+    }
+    a:hover{
+        font-size: 2em;
+        -webkit-animation-play-state: paused;
+    }
+    .d2{
+        background-image: url("./FoodGallery/res2.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .d221:hover{
+        transform: scale(1.3);
+    }
+    .d22{
+        text-align: center;
+    }
+    .b1{
+        color: rgb(232, 205, 229);
+        background-color: rgba(88, 24, 75, 0.873);
+        border-color: rgba(241, 149, 224, 0);
+        box-shadow: 0 6px 10px 0 rgba(198, 117, 157, 0.485), 0 10px 20px 0 rgba(203, 159, 181, 0.549);
+        font-size: larger;
+        font-weight: 800;
+        padding: 12px 15px;
+        text-align: center;
+        border-radius: 50%;
+    }
+    .b1:hover{
+        color: rgba(88, 24, 75, 0.873);
+        background-color: rgba(238, 187, 230, 0);
+        transform: scale(1.08);
+        box-shadow: 0 6px 10px 0 rgba(178, 77, 128, 0.555), 0 10px 20px 0 rgba(178, 77, 128, 0.549);
+    }
+
+    @keyframes lights {
+        0% {
+        color: hsl(305, 72%, 38%);
+        text-shadow:
+            0 0 1em hsla(320, 74%, 50%, 0.2),
+            0 0 0.125em hsla(320, 80%, 37%, 0.3);
+        }
+        
+        30% { 
+        color: hsl(305, 76%, 28%);
+        text-shadow:
+            0 0 1em hsla(320, 86%, 42%, 0.5),
+            0 0 0.125em hsla(320, 75%, 43%, 0.5);
+        }
+        
+        40% { 
+        color: hsl(305, 80%, 20%);
+        text-shadow:
+            0 0 1em hsla(320, 76%, 44%, 0.5),
+            0 0 0.125em hsla(320, 54%, 65%, 0.5);
+        }
+        
+        70% {
+        color: hsl(305, 84%, 14%);
+        text-shadow:
+            0 0 1em hsla(320, 88%, 39%, 0.5),
+            0 0 0.125em hsla(320, 68%, 35%, 0.5);
+        }
+        
+        100% {
+        color: hsl(305, 88%, 11%);
+        text-shadow:
+            0 0 1em hsla(320, 72%, 52%, 0.2),
+            0 0 0.125em hsla(320, 66%, 39%, 0.3);
+        } 
+    }
+    .text-shadow2{
+        font: 175% / 1.3 Raleway, sans-serif;
+        color: hsl(305, 85%, 11%);
+        font-weight: 650;
+        animation: lights 3s 750ms linear infinite;
+    }
+    .d3{
+        margin-top: 4%;
+        margin-left: 8%;
+        margin-right: 4%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .d31,.d32{
+        width: 40%;
+    }
+    .d31{
+        padding-left: 5%;
+        flex: 1;
+        width: 550px;
+    }
+    .d31 img{
+        box-shadow: 0 6px 10px 0 rgba(219, 175, 197, 0.466), 0 10px 20px 0 rgba(211, 145, 178, 0.466); 
+    }
+    .d31 img:hover{
+        transform: scale(1.1);
+        border-radius: 13px;
+        box-shadow: 0 6px 10px 0 rgba(230, 154, 192, 0.466), 0 10px 20px 0 rgba(186, 120, 153, 0.466);
+    }
+    .d32{
+        padding: 3%;
+        text-align: center;
+        color: rgb(38, 13, 81);
+        flex: 1;
+    }
+    .d32 p{
+        font-weight: 540;
+        font-size: large;
+    }
+    .d4 h2{
+        display: inline;
+        padding-left: 5%;
+        color: rgb(131, 9, 114);
+        font-size: 33px;
+    }
+    .d41, .d42, .d43, .d44{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .d411{
+        width: 240px;
+        padding: 1%;
+        border: 1px solid rgb(223, 200, 174);
+        background-color: rgb(240, 233, 235);
+        border-radius: 9px;
+        box-shadow: 0 4px 8px 0 rgb(220, 200, 174), 0 8px 14px 0 rgb(220, 200, 174);
+    }
+    .d411:hover{
+        transform: scale(1.02);
+        transition: transform 1.3s ease;
+        box-shadow: 0 4px 8px 0 rgb(224, 190, 175), 0 8px 14px 0 rgb(214, 190, 170);
+    }
+    .d411:hover img{
+        transform: scale(1.08);
+        transition: transform 1.5s ease;
+    }
+    .d411 h2{
+        padding-left: 40%;
+        padding-right: 40%;
+        color: rgba(120, 28, 74, 0.805);
+        font-size: 20px;
+    }
+    .b2{
+        margin-top: 65%;
+        background-color: rgb(237, 208, 197);
+        color: rgba(77, 4, 61, 0.873);
+        border-color: rgba(77, 4, 61, 0);
+        font-size: larger;
+        font-weight: 1000;
+        padding: 20px;
+        text-align: center;
+        border-radius: 50%;
+    }
+    .b2:hover{
+        background-color: rgba(0, 0, 0, 0);
+        transform: scale(1.05);
+        box-shadow: 0 6px 10px 0 rgba(215, 163, 189, 0.438), 0 10px 20px 0 rgba(218, 133, 176, 0.405);
+    }
+    .d5{
+        margin-top: 4%;
+        margin-bottom: 1%;
+        margin-left: 2%;
+        margin-right: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        line-height: 0.2;
+    }
+    .d51{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2%;
+        line-height: 1;
+    }
+    .d52{
+        margin: 0.2%;
+        width: 350px;
+        background-color: rgb(238, 221, 202);
+        padding: 1%;
+        display: flex;
+        flex-wrap: wrap;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .d521{
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 1%;
+    }
+    .d6{
+        margin-top: 6%;
+        margin-bottom: 0%;
+        margin-left: 4%;
+        margin-right: 6%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        line-height: 1;
+    }
+    .d61{
+        width: 40%;
+        padding: 3%;
+        text-align: center;
+    }
+    .d611{
+        margin: 0%;
+        margin-top: 2%;
+        padding-right: 5%;
+        padding-bottom: 6%;
+        padding-left: 2%;
+        padding-top: 2%;
+        width: 100%;
+        background-image: url("./FoodGallery/res7.jpg");
+        background-repeat: repeat;
+        background-size: cover;
+    }
+    .d62{
+        width: 45%;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .d621, .d622, .d623, .d624{
+        padding: 1%;
+    }
+    .d621 img:hover, .d624 img:hover, .d622 img:hover, .d623 img:hover{
+        transform: scale(1.04);
+        transition: transform 2s ease;
+        border-radius: 20px;
+        box-shadow: 0 6px 10px 0 rgba(206, 43, 125, 0.6), 0 10px 20px 0 rgba(199, 93, 146, 0.578);
+    }
+    .d7{
+        height: 290px;
+        margin: 4%;
+        margin-top: 5%;
+    }
+    marquee{
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .d7 img{
+        width: 200px;
+        height: 280px;
+        padding-left: 20px;
+    }
+    .d8{
+        width: 100%;
+        text-align: center;
+    }
+    .d9{
+        background-color: rgb(238, 221, 202);
+        padding-top: 10px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .d91, .d92, .d93, .d94, .d95{
+        margin-left: 4%;
+    }
+    .d92, .d93, .d94, .d95{
+        padding-top: 3%;
+        align-items: center;
+    }
+    .d10{
+        padding-left: 44%;
+    }
+}
